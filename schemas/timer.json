@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["startTime", "pauseTime", "paused"],
+  "properties": {
+    "startTime": {
+      "type": "number"
+    },
+    "pauseTime": {
+      "type": "number"
+    },
+    "paused": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "default": {
+    "startTime": 0,
+    "pauseTime": 0,
+    "paused": true
+  }
+}

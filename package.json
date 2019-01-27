@@ -1,0 +1,71 @@
+{
+  "name": "kz-layouts",
+  "version": "0.0.0",
+  "description": "On-stream graphics used for KZ tournament streams.",
+  "private": true,
+  "homepage": "https://github.com/danzayau/kz-layouts",
+  "author": {
+    "name": "DanZay",
+    "email": "danzayau@gmail.com",
+    "url": "https://github.com/danzayau"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.2.2",
+    "dashboardPanels": [
+      {
+        "name": "Dashboard",
+        "title": "KZ Dashboard",
+        "file": "Dashboard.html",
+        "headerColor": "#525F78",
+        "fullbleed": true
+      }
+    ],
+    "graphics": [
+      {
+        "file": "Standard1v1.html",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "file": "StandardBreak.html",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "mount": [
+      {
+        "directory": "dist",
+        "endpoint": "dist"
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "unlicense",
+  "dependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "flag-icon-css": "^3.2.1",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.4.2",
+    "vue-material": "^1.0.0-beta-10.2",
+    "vue-particles": "^1.0.9",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "webpack --mode=production --progress",
+    "dev": "webpack --mode=development --watch --progress"
+  }
+}

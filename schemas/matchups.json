@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["players", "description", "bestOf"],
+    "properties": {
+      "players": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "score"],
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "score": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "description": {
+        "type": "string"
+      },
+      "bestOf": {
+        "type": "number"
+      }
+    },
+    "additionalProperties": false
+  },
+  "default": [
+    {
+      "players": [{ "id": 0, "score": 0 }, { "id": 1, "score": 0 }],
+      "description": "Quarter-final 1",
+      "bestOf": 3
+    },
+    {
+      "players": [{ "id": 2, "score": 0 }, { "id": 3, "score": 0 }],
+      "description": "Quarter-final 2",
+      "bestOf": 3
+    },
+    {
+      "players": [{ "id": 4, "score": 0 }, { "id": 5, "score": 0 }],
+      "description": "Quarter-final 3",
+      "bestOf": 3
+    },
+    {
+      "players": [{ "id": 6, "score": 0 }, { "id": 7, "score": 0 }],
+      "description": "Quarter-final 4",
+      "bestOf": 3
+    },
+    {
+      "players": [{ "id": -1, "score": 0 }, { "id": -1, "score": 0 }],
+      "description": "Semi-final 1",
+      "bestOf": 3
+    },
+    {
+      "players": [{ "id": -1, "score": 0 }, { "id": -1, "score": 0 }],
+      "description": "Semi-final 2",
+      "bestOf": 3
+    },
+    {
+      "players": [{ "id": -1, "score": 0 }, { "id": -1, "score": 0 }],
+      "description": "Grand Final",
+      "bestOf": 5
+    },
+    {
+      "players": [{ "id": -1, "score": 0 }, { "id": -1, "score": 0 }],
+      "description": "3rd Place Match",
+      "bestOf": 5
+    }
+  ]
+}

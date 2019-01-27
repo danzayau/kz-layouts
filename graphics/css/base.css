@@ -1,0 +1,21 @@
+@import "../../node_modules/flag-icon-css/css/flag-icon.min.css";
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+  --bgColor1: #0b0c10;
+  --bgColor2: #42403c;
+  --fgColor1: #ededed;
+  --fgColor2: #d13f3f;
+  --fgColor3: #6f98bb;
+  /* --bgColor1: #0b0c10;
+  --bgColor2: #056839;
+  --fgColor1: #ffffff;
+  --fgColor2: #39b54a; */
+}
+
+#main {
+  width: 1600px;
+  height: 900px;
+}

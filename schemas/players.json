@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "country"],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "default": [
+    { "name": "Player 1", "country": "AU" },
+    { "name": "Player 2", "country": "AU" },
+    { "name": "Player 3", "country": "AU" },
+    { "name": "Player 4", "country": "AU" },
+    { "name": "Player 5", "country": "AU" },
+    { "name": "Player 6", "country": "AU" },
+    { "name": "Player 7", "country": "AU" },
+    { "name": "Player 8", "country": "AU" }
+  ]
+}
