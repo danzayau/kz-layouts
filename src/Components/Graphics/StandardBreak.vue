@@ -47,7 +47,12 @@
 <template>
   <div v-if="currentMatchup && matchups && players" class="standard-break">
     <tournament-title id="title"></tournament-title>
-    <bracket id="bracket" v-bind:matchups="matchups" v-bind:players="players"></bracket>
+    <bracket
+      id="bracket"
+      v-bind:matchups="matchups"
+      v-bind:currentMatchupID="currentMatchup.matchID"
+      v-bind:players="players"
+    ></bracket>
     <bracket-info-upper id="upperInfo"></bracket-info-upper>
     <bracket-info-lower id="lowerInfo"></bracket-info-lower>
     <vue-particles

@@ -101,7 +101,7 @@
     <PlayerScore class="playerScore" id="player2Score" v-bind:score="getPlayerScore(1)"></PlayerScore>
     <MapInfo id="mapInfo"></MapInfo>
     <MatchInfo id="matchInfo"></MatchInfo>
-    <Sponsor id="sponsor"></Sponsor>
+    <!-- <Sponsor id="sponsor"></Sponsor> -->
     <vue-particles
       class="particles"
       color="#af1b39"

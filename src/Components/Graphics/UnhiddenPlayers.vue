@@ -38,29 +38,37 @@
         </span>
       </div>
       <div
-        v-for="player in shuffle(players)"
-        :key="player"
+        v-for="(player, index) in shuffle(players)"
+        :key="index"
         class="player md-layout-item md-size-33"
       >
-        <span class="playerName">{{ player }}</span>
+        <div class="playerName">
+          <CountryFlag class="flag" v-bind:country="player.country"></CountryFlag>
+          <div>{{ player.name }}</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import CountryFlag from "./CountryFlag.vue";
+
 export default {
+  components: {
+    CountryFlag
+  },
   data() {
     return {
       players: [
-        "Gwooky",
-        "GiimPy",
-        "vimmi",
-        "Froggy",
-        "EphNey",
-        "orbit",
-        "fdz",
-        "Shard"
+        { name: "Gwooky", country: "AU" },
+        { name: "GiimPy", country: "DE" },
+        { name: "vimmi", country: "NO" },
+        { name: "Froggy", country: "AU" },
+        { name: "EphNey", country: "SE" },
+        { name: "FFM", country: "DE" },
+        { name: "fdz", country: "BR" },
+        { name: "Shard", country: "FI" }
       ]
     };
   },

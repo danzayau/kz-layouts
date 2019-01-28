@@ -10,6 +10,19 @@
   height: 70px;
 }
 
+.current {
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0px 0px 2px 2px var(--fgColor1);
+  }
+  to {
+    box-shadow: 0px 0px 15px 5px var(--fgColor1);
+  }
+}
+
 .matchup:nth-of-type(1) {
   position: absolute;
   top: 0px;
@@ -60,7 +73,7 @@
 
 #third {
   position: absolute;
-  top: 245px;
+  top: 240px;
   left: 300px;
   width: 200px;
   font-family: "Exo 2", sans-serif;
@@ -100,6 +113,7 @@ line {
       v-for="i in 8"
       :key="i"
       class="matchup"
+      :class="i - 1 === currentMatchupID ? 'current' : ''"
       v-bind:topPlayerName="getPlayerNameFromMatch(i - 1, 0)"
       v-bind:topPlayerScore="getPlayerScoreFromMatch(i - 1, 0)"
       v-bind:botPlayerName="getPlayerNameFromMatch(i - 1, 1)"
@@ -130,7 +144,7 @@ line {
 import BracketMatchup from "./BracketMatchup.vue";
 
 export default {
-  props: ["matchups", "players"],
+  props: ["matchups", "currentMatchupID", "players"],
   components: { BracketMatchup },
   methods: {
     getPlayerNameFromMatch(matchID, num) {

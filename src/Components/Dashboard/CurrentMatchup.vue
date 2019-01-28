@@ -24,7 +24,9 @@ button {
       <div class="md-layout-item">
         <md-field>
           <label>Map</label>
-          <md-input v-model="currentMatchup.map"></md-input>
+          <md-select v-model="currentMatchup.map">
+            <md-option v-once v-for="map in maps" :value="map" :key="map">{{ map }}</md-option>
+          </md-select>
         </md-field>
       </div>
     </div>
@@ -48,7 +50,18 @@ export default {
   mixins: [MatchupsMixin],
   data() {
     return {
-      currentMatchup: undefined
+      currentMatchup: undefined,
+      maps: [
+        "kz_avoria",
+        "kz_erinome",
+        "kz_exoteric",
+        "kz_gfy_c0mb0king",
+        "kz_matilda_np",
+        "kz_module",
+        "kz_reach_v2",
+        "kz_shark",
+        "kz_wetbricks"
+      ]
     };
   },
   methods: {

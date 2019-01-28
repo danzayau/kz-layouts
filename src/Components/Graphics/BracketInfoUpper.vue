@@ -13,8 +13,8 @@ p {
 <template>
   <div>
     <p>Player identities are a mystery! They're using fake names!</p>
-    <p>3rd Place &amp; Grand Final matches are Bo5. Others are Bo3.</p>
-    <p>Prize pool: 1st - $125, 2nd - $50, and 3rd - $25.</p>
+    <p>3rd Place &amp; Grand Final matches are Bo5 - others are Bo3.</p>
+    <p>PRIZES: 1st - $125, 2nd - $50, and 3rd - $25</p>
   </div>
 </template>
 
