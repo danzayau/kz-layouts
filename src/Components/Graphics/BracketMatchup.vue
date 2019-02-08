@@ -16,6 +16,10 @@
   padding: 10px;
 }
 
+.winner {
+  background-color: var(--bgColor2);
+}
+
 #top {
   border-bottom: 1px solid var(--fgColor2);
 }
@@ -33,11 +37,11 @@
 
 <template>
   <div class="bracket-matchup">
-    <div class="player" id="top">
+    <div class="player" :class="isWinner(topPlayerScore) ? 'winner' : ''" id="top">
       <span class="name">{{ topPlayerName }}</span>
       <span class="score">{{ topPlayerScore }}</span>
     </div>
-    <div class="player" id="bot">
+    <div class="player" :class="isWinner(botPlayerScore) ? 'winner' : ''" id="bot">
       <span class="name">{{ botPlayerName }}</span>
       <span class="score">{{ botPlayerScore }}</span>
     </div>
@@ -46,6 +50,17 @@
 
 <script>
 export default {
-  props: ["topPlayerName", "topPlayerScore", "botPlayerName", "botPlayerScore"]
+  props: [
+    "topPlayerName",
+    "topPlayerScore",
+    "botPlayerName",
+    "botPlayerScore",
+    "bestOf"
+  ],
+  methods: {
+    isWinner: function(score) {
+      return score >= Math.ceil(this.bestOf / 2);
+    }
+  }
 };
 </script>

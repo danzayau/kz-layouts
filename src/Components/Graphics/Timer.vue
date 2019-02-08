@@ -1,25 +1,27 @@
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 .timer {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
   background-color: var(--bgColor1);
   border: 2px solid var(--fgColor2);
-  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.paused {
+  background-color: var(--bgColor2);
+}
+
 #time {
-  line-height: 50px;
   font-size: 50px;
   color: var(--fgColor1);
 }
 </style>
 
 <template>
-  <div class="timer">
+  <div class="timer" :class="timer && timer.paused && timer.pauseTime !== 0 ? 'paused' : ''">
     <div id="time">{{ time }}</div>
   </div>
 </template>

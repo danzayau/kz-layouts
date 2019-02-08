@@ -9,7 +9,7 @@ h1 {
 <template>
   <div>
     <h1>
-      <i>nykaN's Mysterious Cup of Mystery</i>
+      <i>nykaN's Mysterious Cup of Mystery #2</i>
     </h1>
   </div>
 </template>

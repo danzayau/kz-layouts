@@ -1,25 +1,20 @@
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Exo+2");
-
-.standard-1v1 {
-  font-family: "Exo 2", sans-serif;
-}
-
 .matchup {
   width: 200px;
   height: 70px;
 }
 
 .current {
-  animation: pulse 2s infinite alternate;
+  border: 3px solid var(--fgColor1);
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  from {
-    box-shadow: 0px 0px 2px 2px var(--fgColor1);
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 1);
   }
-  to {
-    box-shadow: 0px 0px 15px 5px var(--fgColor1);
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
   }
 }
 
@@ -76,7 +71,6 @@
   top: 240px;
   left: 300px;
   width: 200px;
-  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   color: white;
   text-align: center;
@@ -118,6 +112,7 @@ line {
       v-bind:topPlayerScore="getPlayerScoreFromMatch(i - 1, 0)"
       v-bind:botPlayerName="getPlayerNameFromMatch(i - 1, 1)"
       v-bind:botPlayerScore="getPlayerScoreFromMatch(i - 1, 1)"
+      v-bind:bestOf="getBestOfFromMatch(i - 1)"
     ></bracket-matchup>
     <svg class="connector" width="120" height="180">
       <line x1="10" y1="0" x2="50" y2="0"></line>
@@ -160,6 +155,9 @@ export default {
         return "";
       }
       return this.$props.matchups[matchID].players[num].score;
+    },
+    getBestOfFromMatch(matchID) {
+      return this.$props.matchups[matchID].bestOf;
     }
   }
 };

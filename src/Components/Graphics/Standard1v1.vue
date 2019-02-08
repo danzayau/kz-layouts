@@ -1,8 +1,8 @@
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Exo+2");
+@import url("https://fonts.googleapis.com/css?family=Overlock:700");
 
 .standard-1v1 {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Overlock", cursive;
 }
 
 #screen-divider {
@@ -29,7 +29,7 @@
   z-index: 1;
   position: absolute;
   top: 600px;
-  width: 400px;
+  width: 401px;
   height: 60px;
 }
 
@@ -38,14 +38,14 @@
 }
 
 #player2Name {
-  left: 1070px;
+  left: 1069px;
 }
 
 .playerScore {
   z-index: 2;
   position: absolute;
   top: 595px;
-  width: 70px;
+  width: 71px;
   height: 70px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 #player2Score {
-  left: 1000px;
+  left: 999px;
 }
 
 #mapInfo {
@@ -104,17 +104,17 @@
     <!-- <Sponsor id="sponsor"></Sponsor> -->
     <vue-particles
       class="particles"
-      color="#af1b39"
+      color="#ffffff"
       :particleOpacity="0.66"
       :particlesNumber="100"
-      shapeType="polygon"
-      :particleSize="4"
-      linesColor="#6f98bb"
-      :linesWidth="1"
+      shapeType="star"
+      :particleSize="5"
+      linesColor="#002868"
+      :linesWidth="3"
       :lineLinked="true"
       :lineOpacity="0.66"
       :linesDistance="150"
-      :moveSpeed="0.4"
+      :moveSpeed="0.3"
       :hoverEffect="false"
       :clickEffect="false"
     ></vue-particles>

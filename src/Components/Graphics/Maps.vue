@@ -1,8 +1,4 @@
 <style scoped>
-.maps {
-  width: 528px;
-}
-
 .map {
   position: relative;
 }
@@ -13,8 +9,8 @@
   left: 50%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 19px;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 24px;
+  text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 </style>
 
@@ -34,15 +30,15 @@ export default {
   data() {
     return {
       maps: [
-        "kz_avoria",
-        "kz_erinome",
-        "kz_exoteric",
-        "kz_gfy_c0mb0king",
-        "kz_matilda_np",
-        "kz_module",
-        "kz_reach_v2",
+        "kz_11342",
+        "kz_wetbricks",
+        "kz_4u_nature",
+        "kz_arrebol",
+        "kz_tradeblock_go",
+        "kz_christmas_fix",
         "kz_shark",
-        "kz_wetbricks"
+        "kz_module",
+        "kz_heatvents_mq"
       ]
     };
   }

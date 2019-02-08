@@ -1,11 +1,7 @@
 <style scoped>
-.players {
-  width: 528px;
-}
-
 .player {
   position: relative;
-  height: 99px;
+  height: 113px;
 }
 
 .title {
@@ -14,7 +10,7 @@
   left: 50%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 30px;
+  font-size: 40px;
   text-shadow: 0 0 15px var(--fgColor3);
 }
 
@@ -24,25 +20,20 @@
   left: 50%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 30px;
 }
 </style>
-
 
 <template>
   <div class="players">
     <div class="md-layout">
-      <div class="player md-layout-item md-size-33">
-        <span class="title">
-          <i>SUSPECTS</i>
-        </span>
-      </div>
       <div
-        v-for="(player, index) in shuffle(players)"
+        v-for="(player, index) in shuffledPlayersWithHeading"
         :key="index"
         class="player md-layout-item md-size-33"
       >
-        <div class="playerName">
+        <div :class="index === 4 ? 'title' : 'playerName'">
           <CountryFlag class="flag" v-bind:country="player.country"></CountryFlag>
           <div>{{ player.name }}</div>
         </div>
@@ -61,16 +52,32 @@ export default {
   data() {
     return {
       players: [
-        { name: "Gwooky", country: "AU" },
-        { name: "GiimPy", country: "DE" },
-        { name: "vimmi", country: "NO" },
-        { name: "Froggy", country: "AU" },
-        { name: "EphNey", country: "SE" },
-        { name: "FFM", country: "DE" },
-        { name: "fdz", country: "BR" },
-        { name: "Shard", country: "FI" }
+        // { name: "Gwooky", country: "AU" },
+        // { name: "GiimPy", country: "DE" },
+        // { name: "vimmi", country: "NO" },
+        // { name: "Froggy", country: "AU" },
+        // { name: "EphNey", country: "SE" },
+        // { name: "FFM", country: "DE" },
+        // { name: "fdz", country: "BR" },
+        // { name: "Shard", country: "FI" }
+        { name: "Ballistic Bacon", country: "US" },
+        { name: "persona", country: "US" },
+        { name: "victoria248", country: "US" },
+        { name: "bombu", country: "US" },
+        { name: "KohZe", country: "US" },
+        { name: "iEatCrayons", country: "US" },
+        { name: "Slumpfy", country: "CA" },
+        { name: "Sachburger", country: "CA" }
       ]
     };
+  },
+  computed: {
+    shuffledPlayersWithHeading: function() {
+      let a = this.players;
+      this.shuffle(a);
+      a.splice(4, 0, { name: "PLAYERS", country: undefined });
+      return a;
+    }
   },
   methods: {
     shuffle(a) {

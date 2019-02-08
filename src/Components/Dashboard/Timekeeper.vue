@@ -66,7 +66,7 @@ export default {
     NodeCG.waitForReplicants(Rtimer).then(() => {
       setInterval(() => {
         this.updateTimerText();
-      }, 100);
+      }, 200);
     });
   }
 };

@@ -1,10 +1,14 @@
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Overlock:700");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+
 .standard-break {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Overlock", cursive;
   color: white;
 }
 
 #title {
+  font-family: "Kalam";
   position: absolute;
   top: 30px;
   left: 145px;
@@ -22,7 +26,8 @@
   align-items: center;
   position: absolute;
   top: 145px;
-  left: 845px;
+  right: 145px;
+  width: 600px;
 }
 
 #lowerInfo {
@@ -30,7 +35,8 @@
   align-items: center;
   position: absolute;
   top: 485px;
-  left: 893px;
+  right: 145px;
+  width: 600px;
   height: 415px;
 }
 
@@ -57,13 +63,13 @@
     <bracket-info-lower id="lowerInfo"></bracket-info-lower>
     <vue-particles
       class="particles"
-      color="#af1b39"
+      color="#ffffff"
       :particleOpacity="0.66"
       :particlesNumber="100"
-      shapeType="polygon"
-      :particleSize="4"
-      linesColor="#6f98bb"
-      :linesWidth="1"
+      shapeType="star"
+      :particleSize="5"
+      linesColor="#002868"
+      :linesWidth="3"
       :lineLinked="true"
       :lineOpacity="0.66"
       :linesDistance="150"

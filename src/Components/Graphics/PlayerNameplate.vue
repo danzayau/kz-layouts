@@ -13,8 +13,8 @@
 }
 
 #name {
-  line-height: 35px;
-  font-size: 35px;
+  line-height: 40px;
+  font-size: 40px;
   color: var(--fgColor1);
   text-shadow: 0 0 15px var(--fgColor3);
 }

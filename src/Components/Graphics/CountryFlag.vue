@@ -2,7 +2,7 @@
 </style>
 
 <template>
-  <div v-bind:class="['flag-icon flag-icon-' + country.toLowerCase()]"></div>
+  <div v-if="country" v-bind:class="['flag-icon flag-icon-' + country.toLowerCase()]"></div>
 </template>
 
 <script>

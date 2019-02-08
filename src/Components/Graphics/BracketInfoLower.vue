@@ -8,14 +8,19 @@
 .fade-leave-to {
   opacity: 0;
 }
+
+#maps,
+#players {
+  width: 100%;
+}
 </style>
 
 
 <template>
   <div>
     <transition name="fade" mode="out-in">
-      <maps v-if="show" key="1"></maps>
-      <unhidden-players v-else key="2"></unhidden-players>
+      <maps id="maps" v-if="show" key="1"></maps>
+      <unhidden-players id="players" v-else key="2"></unhidden-players>
     </transition>
   </div>
 </template>
@@ -37,7 +42,7 @@ export default {
   mounted() {
     setInterval(() => {
       this.show = !this.show;
-    }, 15000);
+    }, 20000);
   }
 };
 </script>
