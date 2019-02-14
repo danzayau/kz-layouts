@@ -19,6 +19,9 @@ Vue.use(MdHighlightText);
 import VueParticles from "vue-particles";
 Vue.use(VueParticles);
 
+import MarqueeText from "vue-marquee-text-component";
+Vue.component("marquee-text", MarqueeText);
+
 import Standard1v1 from "./Components/Graphics/Standard1v1.vue";
 Vue.component("Standard1v1", Standard1v1);
 

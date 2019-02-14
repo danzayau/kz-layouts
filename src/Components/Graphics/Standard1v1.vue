@@ -62,7 +62,7 @@
   top: 660px;
   left: 0px;
   width: 565px;
-  height: 240px;
+  height: 210px;
 }
 
 #matchInfo {
@@ -70,7 +70,7 @@
   top: 660px;
   left: 565px;
   width: 470px;
-  height: 240px;
+  height: 210px;
 }
 
 #sponsor {
@@ -78,7 +78,14 @@
   top: 660px;
   left: 1035px;
   width: 565px;
-  height: 240px;
+  height: 210px;
+}
+
+#ticker {
+  position: fixed;
+  top: 870px;
+  width: 1600px;
+  height: 30px;
 }
 
 .particles {
@@ -102,6 +109,7 @@
     <MapInfo id="mapInfo"></MapInfo>
     <MatchInfo id="matchInfo"></MatchInfo>
     <!-- <Sponsor id="sponsor"></Sponsor> -->
+    <Ticker id="ticker"></Ticker>
     <vue-particles
       class="particles"
       color="#ffffff"
@@ -128,6 +136,7 @@ import PlayerScore from "./PlayerScore.vue";
 import MapInfo from "./MapInfo.vue";
 import MatchInfo from "./MatchInfo.vue";
 import Sponsor from "./Sponsor.vue";
+import Ticker from "./Ticker.vue";
 
 import { CurrentMatchupMixin } from "../CurrentMatchupMixin";
 import { MatchupsMixin } from "../MatchupsMixin";
@@ -141,7 +150,8 @@ export default {
     PlayerScore,
     MapInfo,
     MatchInfo,
-    Sponsor
+    Sponsor,
+    Ticker
   },
   methods: {
     getCurrentMatchup: function() {

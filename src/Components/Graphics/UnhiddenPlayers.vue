@@ -60,14 +60,14 @@ export default {
         // { name: "FFM", country: "DE" },
         // { name: "fdz", country: "BR" },
         // { name: "Shard", country: "FI" }
+        { name: "Sachburger", country: "CA" },
         { name: "Ballistic Bacon", country: "US" },
         { name: "persona", country: "US" },
         { name: "victoria248", country: "US" },
         { name: "bombu", country: "US" },
         { name: "KohZe", country: "US" },
         { name: "iEatCrayons", country: "US" },
-        { name: "Slumpfy", country: "CA" },
-        { name: "Sachburger", country: "CA" }
+        { name: "Slumpfy", country: "CA" }
       ]
     };
   },

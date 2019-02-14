@@ -58,6 +58,7 @@
     "flag-icon-css": "^3.2.1",
     "vue": "^2.5.17",
     "vue-loader": "^15.4.2",
+    "vue-marquee-text-component": "^1.1.1",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-particles": "^1.0.9",
     "vue-template-compiler": "^2.5.17",

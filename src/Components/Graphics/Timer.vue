@@ -12,6 +12,17 @@
 
 .paused {
   background-color: var(--bgColor2);
+  border: 3px solid var(--fgColor1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
 }
 
 #time {
