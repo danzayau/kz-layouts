@@ -7,13 +7,13 @@
 }
 
 span {
-  padding-right: 70px;
+  padding-right: 40px;
 }
 </style>
 
 <template>
   <div class="marquee">
-    <marquee-text :duration="75">
+    <marquee-text :duration="150">
       <span>nykaN's Mysterious Cup of Mystery #2</span>
       <span>All the players are using fake names!</span>
       <span>Watch closely and try to work out their true identities!</span>
