@@ -7,12 +7,12 @@
 
 #screen-divider {
   position: absolute;
-  width: 4px;
+  width: 2px;
   height: 600px;
-  left: 797px;
+  left: 798px;
   top: 0;
   background-color: var(--fgColor2);
-  border-left: 1px solid var(--fgColor2);
+  border-left: 1px solid var(--fgColor);
   border-right: 1px solid var(--fgColor2);
 }
 

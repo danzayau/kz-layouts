@@ -9,22 +9,38 @@
 span {
   padding-right: 40px;
 }
+
+.first {
+  color: #ffd700;
+}
+
+.second {
+  color: #c0c0c0;
+}
+
+.third {
+  color: #cd7f32;
+}
 </style>
 
 <template>
   <div class="marquee">
     <marquee-text :duration="150">
-      <span>nykaN's Mysterious Cup of Mystery #2</span>
+      <span>
+        <i>nykaN's Mysterious Cup of Mystery #2</i>
+      </span>
       <span>All the players are using fake names!</span>
       <span>Watch closely and try to work out their true identities!</span>
-      <span>3rd Place and Grand Final matchups are Bo5 - others are Bo3.</span>
+      <span>3rd Place and Grand Final matchups are Bo5 - others are Bo3</span>
+      <span></span>
       <span></span>
       <span>
         <i>PRIZES</i>
       </span>
-      <span>1st - $125</span>
-      <span>2nd - $50</span>
-      <span>3rd - $25</span>
+      <span class="first">1st - $125</span>
+      <span class="second">2nd - $50</span>
+      <span class="third">3rd - $25</span>
+      <span></span>
       <span></span>
       <span>
         <i>PLAYERS</i>
@@ -34,10 +50,12 @@ span {
         {{ player.name }}
       </span>
       <span></span>
+      <span></span>
       <span>
         <i>MAPS</i>
       </span>
       <span v-for="(map, index) in maps" :key="`${index}+${map}`">{{ map }}</span>
+      <span></span>
       <span></span>
     </marquee-text>
   </div>
@@ -61,14 +79,14 @@ export default {
         // { name: "FFM", country: "DE" },
         // { name: "fdz", country: "BR" },
         // { name: "Shard", country: "FI" }
-        { name: "Sachburger", country: "CA" },
-        { name: "Ballistic Bacon", country: "US" },
-        { name: "persona", country: "US" },
-        { name: "victoria248", country: "US" },
+        { name: "Reddfy", country: "CA" },
         { name: "bombu", country: "US" },
+        { name: "victoria248", country: "US" },
+        { name: "Slumpfy", country: "CA" },
+        { name: "persona", country: "US" },
+        { name: "Zach47", country: "US" },
         { name: "KohZe", country: "US" },
-        { name: "iEatCrayons", country: "US" },
-        { name: "Slumpfy", country: "CA" }
+        { name: "iEatCrayons", country: "US" }
       ],
       maps: [
         "kz_11342",
