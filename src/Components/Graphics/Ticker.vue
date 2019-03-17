@@ -11,7 +11,7 @@ span {
 }
 
 .first {
-  color: #ffd700;
+  color: var(--nykangold);
 }
 
 .second {
@@ -27,19 +27,18 @@ span {
   <div class="marquee">
     <marquee-text :duration="150">
       <span>
-        <i>nykaN's Mysterious Cup of Mystery #2</i>
+        <i>Battle of the World Kreedzionship</i>
       </span>
-      <span>All the players are using fake names!</span>
-      <span>Watch closely and try to work out their true identities!</span>
-      <span>3rd Place and Grand Final matchups are Bo5 - others are Bo3</span>
+      <span>The best of the best - no fakes this time</span>
+      <span>All matchups are Best of 5</span>
       <span></span>
       <span></span>
       <span>
         <i>PRIZES</i>
       </span>
-      <span class="first">1st - $125</span>
-      <span class="second">2nd - $50</span>
-      <span class="third">3rd - $25</span>
+      <span class="first">1st - $200</span>
+      <span class="second">2nd - $80</span>
+      <span class="third">3rd - $40</span>
       <span></span>
       <span></span>
       <span>
@@ -79,25 +78,33 @@ export default {
         // { name: "FFM", country: "DE" },
         // { name: "fdz", country: "BR" },
         // { name: "Shard", country: "FI" }
-        { name: "Reddfy", country: "CA" },
-        { name: "bombu", country: "US" },
-        { name: "victoria248", country: "US" },
+        // { name: "Reddfy", country: "CA" },
+        // { name: "bombu", country: "US" },
+        // { name: "victoria248", country: "US" },
+        // { name: "Slumpfy", country: "CA" },
+        // { name: "persona", country: "US" },
+        // { name: "Zach47", country: "US" },
+        // { name: "KohZe", country: "US" },
+        // { name: "iEatCrayons", country: "US" }
+        { name: "Froggy", country: "AU" },
         { name: "Slumpfy", country: "CA" },
-        { name: "persona", country: "US" },
-        { name: "Zach47", country: "US" },
         { name: "KohZe", country: "US" },
-        { name: "iEatCrayons", country: "US" }
+        { name: "GiimPy", country: "DE" },
+        { name: "Zach47", country: "US" },
+        { name: "FFM", country: "DE" },
+        { name: "Shard", country: "FI" },
+        { name: "victoria248", country: "US" }
       ],
       maps: [
-        "kz_11342",
-        "kz_wetbricks",
-        "kz_4u_nature",
-        "kz_arrebol",
         "kz_tradeblock_go",
-        "kz_christmas_fix",
-        "kz_shark",
+        "kz_halicarnassus",
+        "kz_snowman_v2",
+        "kz_arrebol",
+        "kz_strun_mq",
+        "kz_reach_v2",
         "kz_module",
-        "kz_heatvents_mq"
+        "kz_solidarity_v2",
+        "kz_camembert"
       ]
     };
   }

@@ -4,11 +4,17 @@ body {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
   overflow: hidden;
-  --bgColor1: #000717;
+  --nykangold: #ffb34e;
+  --bgColor1: #0b0c10;
+  --bgColor2: #000000;
+  --fgColor1: #ffffff;
+  --fgColor2: #ffffff;
+  --fgColor3: #000000;
+  /* --bgColor1: #000717;
   --bgColor2: #990826;
   --fgColor1: #ffffff;
   --fgColor2: #bf0a30;
-  --fgColor3: #002868;
+  --fgColor3: #002868; */
   /* --bgColor1: #0b0c10;
   --bgColor2: #42403c;
   --fgColor1: #ededed;

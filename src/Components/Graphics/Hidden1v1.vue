@@ -102,8 +102,8 @@
   <div v-if="currentMatchup && matchups && players" class="standard-1v1">
     <div id="screen-divider"></div>
     <Timer id="timer"></Timer>
-    <StandardPlayerNameplate class="playerName" id="player1Name" v-bind:player="getPlayer(0)"></StandardPlayerNameplate>
-    <StandardPlayerNameplate class="playerName" id="player2Name" v-bind:player="getPlayer(1)"></StandardPlayerNameplate>
+    <HiddenPlayerNameplate class="playerName" id="player1Name" v-bind:player="getPlayer(0)"></HiddenPlayerNameplate>
+    <HiddenPlayerNameplate class="playerName" id="player2Name" v-bind:player="getPlayer(1)"></HiddenPlayerNameplate>
     <PlayerScore class="playerScore" id="player1Score" v-bind:score="getPlayerScore(0)"></PlayerScore>
     <PlayerScore class="playerScore" id="player2Score" v-bind:score="getPlayerScore(1)"></PlayerScore>
     <MapInfo id="mapInfo"></MapInfo>
@@ -115,9 +115,9 @@
       color="#ffffff"
       :particleOpacity="0.66"
       :particlesNumber="100"
-      shapeType="circle"
+      shapeType="star"
       :particleSize="5"
-      linesColor="#0a3aa1"
+      linesColor="#002868"
       :linesWidth="3"
       :lineLinked="true"
       :lineOpacity="0.66"
@@ -131,7 +131,7 @@
 
 <script>
 import Timer from "./Timer.vue";
-import StandardPlayerNameplate from "./StandardPlayerNameplate.vue";
+import HiddenPlayerNameplate from "./HiddenPlayerNameplate.vue";
 import PlayerScore from "./PlayerScore.vue";
 import MapInfo from "./MapInfo.vue";
 import MatchInfo from "./MatchInfo.vue";
@@ -146,7 +146,7 @@ export default {
   mixins: [CurrentMatchupMixin, MatchupsMixin, PlayersMixin],
   components: {
     Timer,
-    StandardPlayerNameplate,
+    HiddenPlayerNameplate,
     PlayerScore,
     MapInfo,
     MatchInfo,

@@ -27,7 +27,6 @@
 
 <template>
   <div class="playernameplate">
-    <!-- <CountryFlag id="flag" v-bind:country="player.country"></CountryFlag> -->
     <div id="name">{{ player.name }}</div>
   </div>
 </template>

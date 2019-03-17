@@ -5,8 +5,6 @@
 .standard-break {
   font-family: "Overlock", cursive;
   color: white;
-  /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
-  text-shadow: 2px 0 0 var(--fgColor3);
 }
 
 #title {
@@ -42,34 +40,51 @@
   height: 415px;
 }
 
-#nykWR {
+.particles {
+  z-index: -1;
+  background-color: var(--bgColor1);
   position: absolute;
-  top: 50%;
-  right: 445px;
-  transform: translate(50%, -50%);
+  top: 0px;
+  width: 1600px;
+  height: 900px;
 }
 </style>
 
 <template>
   <div v-if="currentMatchup && matchups && players" class="standard-break">
     <tournament-title id="title"></tournament-title>
-    <standard-bracket
+    <hidden-bracket
       id="bracket"
       v-bind:matchups="matchups"
       v-bind:currentMatchupID="currentMatchup.matchID"
       v-bind:players="players"
-    ></standard-bracket>
+    ></hidden-bracket>
     <standard-break-info-upper id="upperInfo"></standard-break-info-upper>
-    <standard-break-info-lower id="lowerInfo"></standard-break-info-lower>
-    <img id="nykWR" src="img/nykWR.png">
+    <hidden-break-info-lower id="lowerInfo"></hidden-break-info-lower>
+    <vue-particles
+      class="particles"
+      color="#ffffff"
+      :particleOpacity="0.66"
+      :particlesNumber="100"
+      shapeType="star"
+      :particleSize="5"
+      linesColor="#002868"
+      :linesWidth="3"
+      :lineLinked="true"
+      :lineOpacity="0.66"
+      :linesDistance="150"
+      :moveSpeed="0.4"
+      :hoverEffect="false"
+      :clickEffect="false"
+    ></vue-particles>
   </div>
 </template>
 
 <script>
-import StandardBracket from "./StandardBracket.vue";
+import HiddenBracket from "./HiddenBracket.vue";
 import TournamentTitle from "./TournamentTitle.vue";
 import StandardBreakInfoUpper from "./StandardBreakInfoUpper.vue";
-import StandardBreakInfoLower from "./StandardBreakInfoLower.vue";
+import HiddenBreakInfoLower from "./HiddenBreakInfoLower.vue";
 
 import { CurrentMatchupMixin } from "../CurrentMatchupMixin";
 import { MatchupsMixin } from "../MatchupsMixin";
@@ -78,10 +93,10 @@ import { PlayersMixin } from "../PlayersMixin";
 export default {
   mixins: [CurrentMatchupMixin, MatchupsMixin, PlayersMixin],
   components: {
-    StandardBracket,
+    HiddenBracket,
     TournamentTitle,
     StandardBreakInfoUpper,
-    StandardBreakInfoLower
+    HiddenBreakInfoLower
   }
 };
 </script>

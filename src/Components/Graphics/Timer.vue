@@ -11,7 +11,7 @@
 }
 
 .paused {
-  background-color: var(--bgColor2);
+  background-color: #0a3aa1;
   border: 3px solid var(--fgColor1);
   animation: pulse 2s infinite;
 }
@@ -26,8 +26,8 @@
 }
 
 #time {
-  font-size: 50px;
   color: var(--fgColor1);
+  font-size: 50px;
 }
 </style>
 

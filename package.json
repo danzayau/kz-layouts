@@ -39,6 +39,16 @@
         "file": "StandardBreak.html",
         "width": 1600,
         "height": 900
+      },
+      {
+        "file": "Hidden1v1.html",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "file": "HiddenBreak.html",
+        "width": 1600,
+        "height": 900
       }
     ],
     "mount": [

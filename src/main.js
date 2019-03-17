@@ -28,6 +28,12 @@ Vue.component("Standard1v1", Standard1v1);
 import StandardBreak from "./Components/Graphics/StandardBreak.vue";
 Vue.component("StandardBreak", StandardBreak);
 
+import Hidden1v1 from "./Components/Graphics/Hidden1v1.vue";
+Vue.component("Hidden1v1", Hidden1v1);
+
+import HiddenBreak from "./Components/Graphics/HiddenBreak.vue";
+Vue.component("HiddenBreak", HiddenBreak);
+
 import Dashboard from "./Components/Dashboard/Dashboard.vue";
 Vue.component("Dashboard", Dashboard);
 
