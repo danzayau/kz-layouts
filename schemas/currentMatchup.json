@@ -13,6 +13,6 @@
   "additionalProperties": false,
   "default": {
     "matchID": 0,
-    "map": "kz_reach_v2"
+    "map": "kz_bacho"
   }
 }

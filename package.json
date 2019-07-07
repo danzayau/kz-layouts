@@ -49,6 +49,11 @@
         "file": "HiddenBreak.html",
         "width": 1600,
         "height": 900
+      },
+      {
+        "file": "SixteenPlayerBreak.html",
+        "width": 1600,
+        "height": 900
       }
     ],
     "mount": [

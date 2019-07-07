@@ -34,6 +34,9 @@ Vue.component("Hidden1v1", Hidden1v1);
 import HiddenBreak from "./Components/Graphics/HiddenBreak.vue";
 Vue.component("HiddenBreak", HiddenBreak);
 
+import SixteenPlayerBreak from "./Components/Graphics/SixteenPlayerBreak.vue";
+Vue.component("SixteenPlayerBreak", SixteenPlayerBreak);
+
 import Dashboard from "./Components/Dashboard/Dashboard.vue";
 Vue.component("Dashboard", Dashboard);
 

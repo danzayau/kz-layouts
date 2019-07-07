@@ -25,14 +25,13 @@ p {
 
 <template>
   <div>
-    <p>The best of the best - no fakes this time</p>
-    <p>All matchups are Best of 5</p>
     <h1>PRIZES</h1>
     <p>
-      <span class="first">1st - $200</span>,
-      <span class="second">2nd - $80</span>, and
-      <span class="third">3rd - $40</span>
+      <span class="first">1st - $230</span>,
+      <span class="second">2nd - $90</span>, and
+      <span class="third">3rd - $45</span>
     </p>
+    <p>3rd Place &amp; Grand Final are Bo5 - others Bo3</p>
   </div>
 </template>
 

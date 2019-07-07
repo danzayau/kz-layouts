@@ -9,7 +9,7 @@ h1 {
 <template>
   <div>
     <h1>
-      <i>Battle of the World Kreedzionship</i>
+      <i>The Quest for Kreedz King</i>
     </h1>
   </div>
 </template>

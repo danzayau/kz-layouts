@@ -27,18 +27,27 @@ span {
   <div class="marquee">
     <marquee-text :duration="150">
       <span>
-        <i>Battle of the World Kreedzionship</i>
+        <i>The Quest for Kreedz King</i>
       </span>
-      <span>The best of the best - no fakes this time</span>
-      <span>All matchups are Best of 5</span>
+      <span>3rd Place and Grand Final matches are Best of 5</span>
+      <span>All other matches are Best of 3</span>
       <span></span>
       <span></span>
       <span>
         <i>PRIZES</i>
       </span>
-      <span class="first">1st - $200</span>
-      <span class="second">2nd - $80</span>
-      <span class="third">3rd - $40</span>
+      <span class="first">1st - $230</span>
+      <span class="second">2nd - $90</span>
+      <span class="third">3rd - $45</span>
+      <span></span>
+      <span></span>
+      <span>
+        <i>PRIZE CONTRIBUTORS</i>
+      </span>
+      <span>Zach47</span>
+      <span>GnagarN</span>
+      <span>Lingonskallen</span>
+      <span>RVLO</span>
       <span></span>
       <span></span>
       <span>
@@ -70,41 +79,33 @@ export default {
   data() {
     return {
       players: [
-        // { name: "Gwooky", country: "AU" },
-        // { name: "GiimPy", country: "DE" },
-        // { name: "vimmi", country: "NO" },
-        // { name: "Froggy", country: "AU" },
-        // { name: "EphNey", country: "SE" },
-        // { name: "FFM", country: "DE" },
-        // { name: "fdz", country: "BR" },
-        // { name: "Shard", country: "FI" }
-        // { name: "Reddfy", country: "CA" },
-        // { name: "bombu", country: "US" },
-        // { name: "victoria248", country: "US" },
-        // { name: "Slumpfy", country: "CA" },
-        // { name: "persona", country: "US" },
-        // { name: "Zach47", country: "US" },
-        // { name: "KohZe", country: "US" },
-        // { name: "iEatCrayons", country: "US" }
-        { name: "Froggy", country: "AU" },
-        { name: "Slumpfy", country: "CA" },
+        { name: "victoria248", country: "US" },
+        { name: "Flybug123", country: "HK" },
         { name: "KohZe", country: "US" },
+        { name: "Ailwyn", country: "GB" },
+        { name: "LEWLY", country: "SE" },
+        { name: "Jak", country: "DE" },
+        { name: "Jeremyiah", country: "AU" },
+        { name: "Fiphfil", country: "US" },
+        { name: "Froggy", country: "AU" },
+        { name: "Lami", country: "CZ" },
+        { name: "Slumpfy", country: "CA" },
+        { name: "Reddfy", country: "CA" },
+        { name: "persona", country: "US" },
+        { name: "Carrier", country: "GB" },
         { name: "GiimPy", country: "DE" },
-        { name: "Zach47", country: "US" },
-        { name: "FFM", country: "DE" },
-        { name: "Shard", country: "FI" },
-        { name: "victoria248", country: "US" }
+        { name: "broiler", country: "NO" }
       ],
       maps: [
-        "kz_tradeblock_go",
+        "kz_bacho",
+        "kz_conifer",
+        "kz_genesis_go2",
         "kz_halicarnassus",
-        "kz_snowman_v2",
-        "kz_arrebol",
-        "kz_strun_mq",
-        "kz_reach_v2",
-        "kz_module",
-        "kz_solidarity_v2",
-        "kz_camembert"
+        "kz_hellinashop",
+        "kz_shark",
+        "kz_solidarity",
+        "kz_tradeblock_go",
+        "kz_waterhole"
       ]
     };
   }

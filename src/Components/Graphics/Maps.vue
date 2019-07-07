@@ -1,6 +1,7 @@
 <style scoped>
 .map {
   position: relative;
+  height: 40px;
 }
 
 .mapName {
@@ -17,7 +18,7 @@
   <div class="maps">
     <div class="md-layout">
       <div v-for="map in maps" :key="map" class="map md-layout-item md-size-33">
-        <img :src="'img/' + map + '.png'">
+        <!-- <img :src="'img/' + map + '.png'"> -->
         <span class="mapName">{{ map }}</span>
       </div>
     </div>
@@ -29,15 +30,15 @@ export default {
   data() {
     return {
       maps: [
-        "kz_tradeblock_go",
+        "kz_bacho",
+        "kz_conifer",
+        "kz_genesis_go2",
         "kz_halicarnassus",
-        "kz_snowman_v2",
-        "kz_arrebol",
-        "kz_strun_mq",
-        "kz_reach_v2",
-        "kz_module",
-        "kz_solidarity_v2",
-        "kz_camembert"
+        "kz_hellinashop",
+        "kz_shark",
+        "kz_solidarity",
+        "kz_tradeblock_go",
+        "kz_waterhole"
       ]
     };
   }

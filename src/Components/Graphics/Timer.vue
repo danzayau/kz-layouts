@@ -11,7 +11,7 @@
 }
 
 .paused {
-  background-color: #0a3aa1;
+  background-color: #004225;
   border: 3px solid var(--fgColor1);
   animation: pulse 2s infinite;
 }

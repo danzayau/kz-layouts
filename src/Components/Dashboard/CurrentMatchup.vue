@@ -52,15 +52,15 @@ export default {
     return {
       currentMatchup: undefined,
       maps: [
-        "kz_tradeblock_go",
+        "kz_bacho",
+        "kz_conifer",
+        "kz_genesis_go2",
         "kz_halicarnassus",
-        "kz_snowman_v2",
-        "kz_arrebol",
-        "kz_strun_mq",
-        "kz_reach_v2",
-        "kz_module",
-        "kz_solidarity_v2",
-        "kz_camembert"
+        "kz_hellinashop",
+        "kz_shark",
+        "kz_solidarity",
+        "kz_tradeblock_go",
+        "kz_waterhole"
       ]
     };
   },

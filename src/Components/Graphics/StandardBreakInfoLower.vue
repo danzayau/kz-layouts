@@ -1,4 +1,9 @@
 <style scoped>
+h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1s 1s;
@@ -18,6 +23,9 @@
 
 <template>
   <div>
+    <div>
+      <h1>MAPS</h1>
+    </div>
     <transition name="fade" mode="out-in">
       <maps id="maps"></maps>
     </transition>
